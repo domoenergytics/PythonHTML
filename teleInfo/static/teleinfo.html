@@ -10,7 +10,7 @@
 			// variables / objets globaux
 			var canvas = null; 
 			var contextCanvas = null;
-			var maxVA = 40000;			// VolAmpères maxi tracé dans le canvas
+			var maxVA = 40000;			// VolAmpï¿½res maxi tracï¿½ dans le canvas
 			var x=0;
 			var y=0;
 			var xo=0;
@@ -20,7 +20,7 @@
 				// Fond du Canvas
 				contextCanvas.fillStyle = "rgb(255,255,200)";
 				contextCanvas.fillRect (canvas.width - fx, 0, canvas.width, canvas.height); 
-				// Trace les guides tous les 2000 VoltAmpères
+				// Trace les guides tous les 2000 VoltAmpï¿½res
 				savedStrokeStyle = contextCanvas.strokeStyle;
 				contextCanvas.strokeStyle = "rgb(237,237,237)";
 				ly = 0;
@@ -57,18 +57,18 @@
 		</script>
 	</head>
 	<body ng-controller="teleinfoCtrl" ng-init="getJson()">
-		<h3>Compteur EDF - école de Kermelo:</h3>
+		<h3>Compteur EDF</h3>
 		<ul>
-			<li>Puissance apparente = <b>{{data.pa}}</b>&nbsp; VoltAmpères</li>
-			<li>Index général = <b>{{cumul}}</b>&nbsp; kWh &nbsp; &nbsp; <small>( détail: &nbsp; Index A = <b>{{data.idxA}}</b>&nbsp; - &nbsp;Index B = <b>{{data.idxB}}</b>&nbsp; - &nbsp;Index C = <b>{{data.idxC}}</b>&nbsp; - &nbsp;Index D = <b>{{data.idxD}}</b> )</small></li>
+			<li>Puissance apparente = <b>{{data.pa}}</b>&nbsp; VoltAmpï¿½res</li>
+			<li>Index gï¿½nï¿½ral = <b>{{cumul}}</b>&nbsp; kWh &nbsp; &nbsp; <small>( dï¿½tail: &nbsp; Index A = <b>{{data.idxA}}</b>&nbsp; - &nbsp;Index B = <b>{{data.idxB}}</b>&nbsp; - &nbsp;Index C = <b>{{data.idxC}}</b>&nbsp; - &nbsp;Index D = <b>{{data.idxD}}</b> )</small></li>
 		</ul>
-		<small>Evolution des VoltAmpères: <small>(toutes les minutes)</small></small>
+		<small>Evolution des VoltAmpï¿½res: <small>(toutes les minutes)</small></small>
 		<canvas id="nomCanvas" width="300" height="300"></canvas>
 		<br/>
 		<small>x = <small>{{x}}</small><font size="2"></font></small>
 		<br/>
 		<small><small><small>
-		<br/>TéléInfo sur modem USBTIC
+		<br/>Tï¿½lï¿½Info sur modem USBTIC
 		<br/>(c) DomoEnergyTics
 		</small></small></small>
 	</body>
